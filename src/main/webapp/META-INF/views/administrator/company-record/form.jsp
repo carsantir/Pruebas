@@ -21,7 +21,7 @@
 	<acme:form-textbox code="administrator.company-record.form.label.ceo" path="ceo"/>
 	<acme:form-textarea code="administrator.company-record.form.label.description" path="description"/>
 	<acme:form-url code="administrator.company-record.form.label.website" path="website"/>
-	<acme:form-textbox code="administrator.company-record.form.label.number" path="number" placeholder="+2(678)1234567"/>
+	<acme:form-textbox code="administrator.company-record.form.label.number" path="number" placeholder="+2 (678) 1234567"/>
 	<acme:form-textbox code="administrator.company-record.form.label.email" path="email" placeholder="example@example.com"/>
 	<acme:form-textbox code="administrator.company-record.form.label.stars" path="stars"/>
 	<jstl:if test="${command != 'create'}">

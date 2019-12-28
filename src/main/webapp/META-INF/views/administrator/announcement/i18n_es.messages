@@ -9,9 +9,9 @@
 # they accept any liabilities with respect to them.
 
 administrator.announcement.list.label.moment=Momento
-administrator.announcement.list.label.title=Titulo
+administrator.announcement.list.label.title=Título
 
-administrator.announcement.form.label.title=Titulo
+administrator.announcement.form.label.title=Título
 administrator.announcement.form.label.moment=Momento
 administrator.announcement.form.label.text=Texto
 administrator.announcement.form.label.moreInfo=Más información

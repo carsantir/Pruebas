@@ -25,6 +25,6 @@ administrator.dashboard.form.label.averageRewardOffer = Average Reward Offer
 administrator.dashboard.form.labelsdMinRewardOffer = Standard Deviation Reward Offer (Minimum Price)
 administrator.dashboard.form.labelsdMaxRewardOffer = Standard Deviation Reward Offer (Maximum Price)
 
-administrator.dashboard.form.label.avgJobsPerEmployer=Average number of jobs per employer
-administrator.dashboard.form.label.avgApplicationsPerEmployer=Average number of applications per employer
-administrator.dashboard.form.label.avgApplicationsPerWorkers=Average number of applications per worker
+administrator.dashboard.form.label.avgJobsPerEmployer=Average Number of Jobs per Employer
+administrator.dashboard.form.label.avgApplicationsPerEmployer=Average Number of Applications per Employer
+administrator.dashboard.form.label.avgApplicationsPerWorkers=Average Number of Applications per Worker

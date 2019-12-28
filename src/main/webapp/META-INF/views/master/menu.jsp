@@ -20,8 +20,10 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.features.announcement" action="/anonymous/announcement/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.features.company-record.list-all" action="/anonymous/company-record/list-all"/>
 			<acme:menu-suboption code="master.menu.anonymous.features.company-record.list-top" action="/anonymous/company-record/list-top"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.features.investor-record.list-all" action="/anonymous/investor-record/list-all"/>
 			<acme:menu-suboption code="master.menu.anonymous.features.investor-record.list-top" action="/anonymous/investor-record/list-top"/>
 		</acme:menu-option>
@@ -42,17 +44,23 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list"/>
      		<acme:menu-suboption code="master.menu.administrator.announcements.create" action="/administrator/announcement/create"/>
+     		<acme:menu-separator/>
      		<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenge/list"/>
-     		<acme:menu-suboption code="master.menu.administrator.auditor" action="/administrator/auditor/list"/>
      		<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenge/create"/>
+     		<acme:menu-separator/>
+     		<acme:menu-suboption code="master.menu.administrator.auditor" action="/administrator/auditor/list"/>
+     		<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.investor-record" action="/administrator/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.investor-record.create" action="/administrator/investor-record/create"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.company-record" action="/administrator/company-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.company-record.create" action="/administrator/company-record/create"/>
+			<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.administrator.commercial-banner" action="/administrator/commercial-banner/list"/>
-			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner" action="/administrator/non-commercial-banner/list"/>
 			<acme:menu-suboption code="master.menu.administrator.commercial-banner.create" action="/administrator/commercial-banner/create"/>
+			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner" action="/administrator/non-commercial-banner/list"/>
 			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner.create" action="/administrator/non-commercial-banner/create"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list"/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>

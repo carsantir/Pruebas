@@ -24,6 +24,6 @@ administrator.dashboard.form.label.averageRewardOffer = Media de los Premios de 
 administrator.dashboard.form.labelsdMinRewardOffer = Desviación Típica de los Premios de Ofertas (Precio Mínimo)
 administrator.dashboard.form.labelsdMaxRewardOffer = Desviación Típica de los Premios de Ofertas (Precio Máximo)
 
-administrator.dashboard.form.label.avgJobsPerEmployer=Número medio de trabajos por empleador
-administrator.dashboard.form.label.avgApplicationsPerEmployer=Número medio de aplicaciones por empleador
-administrator.dashboard.form.label.avgApplicationsPerWorkers=Número medio de aplicaciones por trabajador
+administrator.dashboard.form.label.avgJobsPerEmployer=Número Medio de Trabajos por Empleador
+administrator.dashboard.form.label.avgApplicationsPerEmployer=Número Medio de Aplicaciones por Empleador
+administrator.dashboard.form.label.avgApplicationsPerWorkers=Número Medio de Aplicaciones por Trabajador
