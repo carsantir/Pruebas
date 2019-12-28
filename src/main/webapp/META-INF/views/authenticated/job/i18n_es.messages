@@ -1,0 +1,28 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.job.list.label.reference=Referencia
+authenticated.job.list.label.deadline=Fecha límite 
+authenticated.job.list.label.title=Título
+authenticated.job.list.label.employer=Empleador
+
+authenticated.job.form.label.reference=Referencia
+authenticated.job.form.label.deadline=Fecha límite 
+authenticated.job.form.label.title=Título
+authenticated.job.form.label.salary=Salario
+authenticated.job.form.label.moreInfo=Más información
+authenticated.job.form.label.draft= ¿Es un borrador? 
+authenticated.job.form.label.description=Descripción
+authenticated.job.form.button.return=Volver
+authenticated.job.form.label.duties=Ver deberes
+authenticated.job.form.label.username=Nombre de usuario del contratador
+authenticated.job.form.button.link=Listar registros de auditoría
+authenticated.job.form.button.apply = Solicitar trabajo
+authenticated.job.form.button.write = Escribir registro de auditoría

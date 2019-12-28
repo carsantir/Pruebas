@@ -1,0 +1,23 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.provider.request.form.label.title = Título:
+authenticated.provider.request.form.label.deadLine = Fecha límite:
+authenticated.provider.request.form.label.text = Texto:
+authenticated.provider.request.form.label.reward = Recompensa:
+authenticated.provider.request.form.label.ticker = Código:
+authenticated.provider.request.form.label.confirmed = Confirmar
+authenticated.provider.request.form.button.create = Crear
+authenticated.provider.request.form.button.return = Volver
+
+authenticated.provider.request.error.duplicated = El ticker debe ser único
+authenticated.provider.request.error.isFutureDate = La fecha límite debe ser futura
+authenticated.provider.request.error.must-confirmed = Debe confirmar el envío
+authenticated.provider.request.error.must-be-euro = La divisa debe ser € o EUR (que representa los euros)

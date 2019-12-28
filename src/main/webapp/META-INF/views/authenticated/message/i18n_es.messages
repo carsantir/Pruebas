@@ -1,0 +1,29 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.message.list.label.title = Título del mensaje
+authenticated.message.list.label.moment = Fecha de creación 
+authenticated.message.list.label.tags = Etiquetas
+authenticated.message.list.label.messageThread.title = Título del hilo
+authenticated.message.list.button.return = Volver a mi lista de hilos
+
+authenticated.message.form.label.title = Título del mensaje
+authenticated.message.form.label.moment = Fecha de creación
+authenticated.message.form.label.tags = Etiquetas
+authenticated.message.form.label.body = Cuerpo del mensaje
+authenticated.message.form.label.userAccount.username = Usuario
+authenticated.message.form.label.messageThread.title = Título del hilo
+authenticated.message.form.label.checkbox=Confirmar mensaje
+
+authenticated.message.form.button.create=Crear
+authenticated.message.form.button.return = Volver
+
+authenticated.message.error.checkbox=Debes confirmar la creación
+authenticated.message.error.spam=El texto supera el número de palabras spam permitidas

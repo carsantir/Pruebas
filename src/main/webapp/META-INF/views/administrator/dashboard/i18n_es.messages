@@ -1,0 +1,29 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.label.totalAnnouncements = Total de Anuncios 
+administrator.dashboard.form.label.totalCompanyRecords = Total  de Registros de Compañías
+administrator.dashboard.form.label.totalInvestorRecords = Total de Registro de Inversiones
+
+administrator.dashboard.form.label.minRewardRequest = Mínimo Premio de Peticiones
+administrator.dashboard.form.label.maxRewardRequest = Máximo Premio de Peticiones
+administrator.dashboard.form.label.averageRewardRequest = Media de los Premios de Peticiones
+administrator.dashboard.form.labelsdRewardRequest = Desviación Típica de los Premios de Peticiones
+	
+	
+administrator.dashboard.form.label.minRewardOffer = Mínimo Premio de Ofertas
+administrator.dashboard.form.label.maxRewardOffer = Máximo Premio de Ofertas
+administrator.dashboard.form.label.averageRewardOffer = Media de los Premios de Ofertas
+administrator.dashboard.form.labelsdMinRewardOffer = Desviación Típica de los Premios de Ofertas (Precio Mínimo)
+administrator.dashboard.form.labelsdMaxRewardOffer = Desviación Típica de los Premios de Ofertas (Precio Máximo)
+
+administrator.dashboard.form.label.avgJobsPerEmployer=Número medio de trabajos por empleador
+administrator.dashboard.form.label.avgApplicationsPerEmployer=Número medio de aplicaciones por empleador
+administrator.dashboard.form.label.avgApplicationsPerWorkers=Número medio de aplicaciones por trabajador

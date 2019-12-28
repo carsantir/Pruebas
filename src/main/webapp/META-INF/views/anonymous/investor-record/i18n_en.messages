@@ -1,0 +1,19 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+anonymous.investor-record.form.label.investorName = Investor name:
+anonymous.investor-record.form.label.sector = Sector:
+anonymous.investor-record.form.label.investingStatement = Investing Statement:
+anonymous.investor-record.form.label.stars = Stars:
+anonymous.investor-record.form.button.return = Return
+
+anonymous.investor-record.list.label.investorName = Investor name:
+anonymous.investor-record.list.label.sector = Sector:
+anonymous.investor-record.list.label.stars = Stars:

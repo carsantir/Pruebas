@@ -1,0 +1,24 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.messageThread.list.label.title = Thread's title
+authenticated.messageThread.list.label.moment = Creation moment
+
+authenticated.messageThread.form.label.title = Thread's title
+authenticated.messageThread.form.label.moment = Creation moment
+authenticated.messageThread.form.label.messages = Thread's messages
+authenticated.messageThread.form.button.return = Return
+authenticated.canParticipate.form.button.create = Add user
+authenticated.canParticipate.form.button.delete = Delete user
+authenticated.messageThread.form.button.notusers = Users not involved
+authenticated.messageThread.form.button.users = Users involved
+authenticated.message.form.button.create=Create message
+authenticated.messageThread.form.button.create=Create message thread
+authenticated.messageThread.form.button.notusers = Add user

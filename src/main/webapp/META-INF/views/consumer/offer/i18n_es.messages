@@ -1,0 +1,26 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+consumer.offer.form.label.title = Título:
+consumer.offer.form.label.deadline = Fecha límite:
+consumer.offer.form.label.text = Texto:
+consumer.offer.form.label.minPrice = Precio mínimo:
+consumer.offer.form.label.maxPrice = Precio máximo:
+consumer.offer.form.label.ticker = Código bursátil:
+consumer.offer.form.label.checkbox = Confirmación
+
+consumer.offer.form.button.create = Crear
+consumer.offer.form.button.return = Volver
+
+consumer.offer.error.checkbox = Debes confirmar la creación
+consumer.offer.error.must-be-future = La fecha límite debe ser futura
+consumer.offer.error.duplicated = El ticker debe ser único
+consumer.offer.error.must-be-euro = La divisa debe ser € o EUR (que representa los euros)
+consumer.offer.error.must-be-in-range = El precio mínimo debe ser menor que el precio máximo

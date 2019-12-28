@@ -1,0 +1,30 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+sponsor.non-commercial-banner.list.label.pictureUrl = Picture url
+sponsor.non-commercial-banner.list.label.jingle = Jingle
+sponsor.non-commercial-banner.list.label.sponsor.organisationName = Organisation name
+sponsor.non-commercial-banner.list.label.sponsor.userAccount.username = Sponsor's username
+
+sponsor.non-commercial-banner.form.label.pictureUrl = Picture url
+sponsor.non-commercial-banner.form.label.targetUrl = Target url
+sponsor.non-commercial-banner.form.label.jingle = Jingle
+sponsor.non-commercial-banner.form.label.slogan = Slogan
+sponsor.non-commercial-banner.form.label.sponsor.organisationName = Organisation name
+sponsor.non-commercial-banner.form.label.sponsor.userAccount.username = Sponsor's username
+
+sponsor.non-commercial-banner.form.button.return = Return
+
+sponsor.non-commercial-banner.form.button.create = Create
+sponsor.non-commercial-banner.form.button.update = Update
+sponsor.noncommercial-banner.form.button.delete=Delete
+
+
+sponsor.noncommercialbanner.error.spam=The text contains more spam words than allowed

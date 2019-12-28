@@ -1,0 +1,22 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.can-participate.list.label.userAccount.username = Users involved
+authenticated.can-participate.list.label.messageThread = Message thread's title
+authenticated.can-participate.list.button.return = Return to message threads list
+
+authenticated.can-participate.form.label.userAccount.username = User involved
+authenticated.can-participate.form.label.messageThread = Message thread's title
+authenticated.can-participate.form.button.delete = Delete user from message thread
+authenticated.can-participate.form.button.return = Return
+authenticated.add-user.form.select = Select an user
+authenticated.can-participate.form.button.add = Add
+authenticated.can-participate.form.errors = As a creator, you cannot delete yourself
+authenticated.messageThread.form.error.noesnuevo = The user you are trying to add is already in

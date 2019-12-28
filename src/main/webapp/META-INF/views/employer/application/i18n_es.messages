@@ -1,0 +1,32 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.application.list.label.referenceNumber=Número de referencia
+employer.application.list.label.moment=Fecha de creación
+employer.application.list.label.status=Estado
+employer.application.list.label.job.reference=Referencia del trabajo
+employer.application.list.label.worker.userAccount.username=Usuario del trabajador
+
+employer.application.form.label.referenceNumber = Referencia
+employer.application.form.label.moment = Fecha de creación
+employer.application.form.label.status = Estado
+employer.application.form.label.statement = Declaración
+employer.application.form.label.skills = Habilidades
+employer.application.form.label.qualifications = Títulos
+employer.application.form.label.job.title = Título del trabajo
+employer.application.form.label.job.reference = Referencia del trabajo
+employer.application.form.label.worker.userAccount.username = Usuario del trabajador
+employer.application.form.label.justification = Justificación del estado
+
+employer.application.form.button.return = Volver
+employer.application.form.button.reject = Rechazar
+
+employer.application.error.need-justification = Se necesita una justificación si se rechaza
+employer.application.error.must-be-pending = El estado tiene que ser pendiente para poder aceptarlo o rechazarlo

@@ -1,0 +1,27 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.commercial-banner.list.label.pictureUrl = Picture Url
+administrator.commercial-banner.list.label.creditCard = Credit Card
+
+administrator.commercial-banner.form.label.pictureUrl = Picture url
+administrator.commercial-banner.form.label.slogan = Slogan
+administrator.commercial-banner.form.label.targetUrl = Target url
+administrator.commercial-banner.form.label.creditCard = Credit Card
+administrator.commercial-banner.form.label.cvv = CVV
+administrator.commercial-banner.form.label.expirationDate = Expiration date
+
+administrator.commercial-banner.form.button.return = Return
+administrator.commercial-banner.form.button.create = Create
+administrator.commercial-banner.form.button.update = Update
+administrator.commercial-banner.form.button.delete = Delete
+
+administrator.commercial-banner.error.expiration-date = The expiration date with format mm/yyyy must be future
+administrator.commercial-banner.error.invalid-format = The expiration date format must be mm/yyyy

@@ -1,0 +1,39 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.job.list.label.reference=Reference
+employer.job.list.label.deadline=Deadline
+employer.job.list.label.title=Title
+employer.job.list.label.employer=Employer
+
+employer.job.form.label.reference=Reference
+employer.job.form.label.title=Title
+employer.job.form.label.deadline=Deadline
+employer.job.form.label.salary=Salary
+employer.job.form.label.moreInfo=More Info
+employer.job.form.label.description=Description
+employer.job.form.label.duty=Duties
+employer.job.form.button.return=Return
+employer.job.form.label.draft=Is draft?
+employer.job.form.label.username=Employer
+employer.job.form.button.link=List audit records
+employer.job.form.button.create.duty=Create duty
+employer.job.form.button.create=Create
+employer.job.form.button.update=Update
+employer.job.form.button.delete=Delete
+
+employer.job.error.workload=For saving a job as published its duties percentage must sum up 100%
+employer.job.error.spam=The text contains more spam words than allowed
+employer.job.error.future=Deadline must be future
+employer.job.error.must-be-euro = Reward currency must be € or EUR (which represents the euro currency)
+employer.job.duty.error.spam=Duties linked to this job contain more spam words than allowed in their fields
+employer.job.error.apps=You cannot delete a job with worker's applications
+employer.job.error.must-have-description=The job must have a description to be updated as published
+employer.job.error.duplicated=That reference is already in use

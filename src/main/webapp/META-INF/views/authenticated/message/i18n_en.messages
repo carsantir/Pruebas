@@ -1,0 +1,29 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.message.list.label.title = Message's title
+authenticated.message.list.label.moment = Creation moment
+authenticated.message.list.label.tags = Tags
+authenticated.message.list.label.messageThread.title = Thread's title
+authenticated.message.list.button.return = Return to my threads' list
+
+authenticated.message.form.label.title = Message's title
+authenticated.message.form.label.moment = Creation moment
+authenticated.message.form.label.tags = Tags
+authenticated.message.form.label.body = Message's body
+authenticated.message.form.label.userAccount.username = Username
+authenticated.message.form.label.messageThread.title = Thread's title
+authenticated.message.form.label.checkbox=Confirm message
+
+authenticated.message.form.button.create=Create
+authenticated.message.form.button.return = Return
+
+authenticated.message.error.checkbox=You must confirm the creation
+authenticated.message.error.spam=The text contains more spam words than allowed

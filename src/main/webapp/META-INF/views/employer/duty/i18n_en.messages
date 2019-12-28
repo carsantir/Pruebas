@@ -1,0 +1,28 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.duty.list.label.title=Title
+employer.duty.list.label.description=Description
+employer.duty.list.label.percentage=Percentage
+employer.duty.list.label.job.reference=Job which contains it
+
+employer.duty.form.label.title=Title
+employer.duty.form.label.description=Description
+employer.duty.form.label.percentage=Percentage
+employer.duty.form.label.job.reference=Job which contains it
+
+employer.duty.form.button.create=Create
+employer.duty.form.button.delete=Delete
+employer.duty.form.button.update=Update
+employer.duty.form.button.return=Return
+
+employer.duty.error.spam=The text contains more spam words than allowed
+employer.duty.error.up-to-hundred=Percentage of all duties from one job must be less or equal 100
+employer.duty.error.more-than-cero=Percentage must be more than cero

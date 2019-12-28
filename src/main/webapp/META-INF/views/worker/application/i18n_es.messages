@@ -1,0 +1,32 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+worker.application.form.label.referenceNumber = Referencia
+worker.application.form.label.moment = Fecha de creación
+worker.application.form.label.status = Estado
+worker.application.form.label.statement = Declaración
+worker.application.form.label.skills = Habilidades
+worker.application.form.label.qualifications = Títulos
+worker.application.form.label.job.title = Título del trabajo
+worker.application.form.label.job.reference = Referencia del trabajo
+worker.application.form.label.worker.userAccount.username = Usuario del trabajador
+worker.application.form.button.create = Solicitar trabajo
+
+
+worker.application.list.label.referenceNumber = Referencia
+worker.application.list.label.moment = Fecha de creación
+worker.application.list.label.status = Estado
+worker.application.list.label.job.reference = Referencia del trabajo
+worker.application.list.label.worker.userAccount.username = Usuario del trabajador
+worker.application.form.label.justification = Justificación del estado
+
+worker.application.form.button.return = Volver
+
+worker.application.error.duplicated = El número de referencia ya está en uso

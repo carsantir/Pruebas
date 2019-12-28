@@ -1,0 +1,23 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.provider.request.form.label.title = Title:
+authenticated.provider.request.form.label.deadLine = Deadline:
+authenticated.provider.request.form.label.text = Text:
+authenticated.provider.request.form.label.reward = Reward:
+authenticated.provider.request.form.label.ticker = Ticker:
+authenticated.provider.request.form.label.confirmed = Confirm
+authenticated.provider.request.form.button.create = Create
+authenticated.provider.request.form.button.return = Return
+
+authenticated.provider.request.error.duplicated = Ticker must be unique
+authenticated.provider.request.error.isFutureDate = Deadline must be a future date
+authenticated.provider.request.error.must-confirmed = Submit must be confirmed
+authenticated.provider.request.error.must-be-euro = Reward currency must be € or EUR (which represents the euro currency)
