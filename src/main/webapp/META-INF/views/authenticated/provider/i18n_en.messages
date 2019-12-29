@@ -11,8 +11,8 @@
 authenticated.provider.provider.form.title.create = Become an provider
 authenticated.provider.provider.form.title.update = Update provider data
 
-authenticated.provider.form.label.company = Company: 
-authenticated.provider.form.label.sector = Sector:
+authenticated.provider.form.label.company = Company
+authenticated.provider.form.label.sector = Sector
 
 authenticated.provider.form.button.create = Register
 authenticated.provider.form.button.update = Update
