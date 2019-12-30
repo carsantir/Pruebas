@@ -72,15 +72,12 @@ master.menu.administrator.auditor=Auditor requests
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
 master.menu.provider.features.request.create = Create request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
 master.menu.consumer.offers.create = Create offers
-master.menu.consumer.favourite-link = Favourite link
-
 
 # master.menu.worker ##########################################################
 

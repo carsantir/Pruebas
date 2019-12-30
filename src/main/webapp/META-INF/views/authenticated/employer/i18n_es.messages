@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.employer.form.label.company=Compañia
+authenticated.employer.form.label.company=Compañía
 authenticated.employer.form.label.sector=Sector
 authenticated.employer.form.button.create=Registrar
 authenticated.employer.form.button.update=Actualizar
