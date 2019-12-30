@@ -109,8 +109,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		haceCuatroSemanas.add(Calendar.WEEK_OF_YEAR, -4);
 		Date[] secuenciaFechas = new Date[28];
 
+		Calendar aux = haceCuatroSemanas;
 		for (int i = 0; i < 28; i++) {
-			Calendar aux = haceCuatroSemanas;
 			aux.add(Calendar.DAY_OF_YEAR, 1);
 			secuenciaFechas[i] = aux.getTime();
 		}
