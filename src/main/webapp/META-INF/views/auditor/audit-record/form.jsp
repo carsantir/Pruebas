@@ -31,7 +31,7 @@
 		<acme:form-hidden path="job.id" />
 	</jstl:if>
 	
-	<acme:form-submit test="${command == 'show' }"
+	<acme:form-submit test="${command == 'show' && draft}"
 		code="auditor.audit-record.form.button.update"
 		action="/auditor/audit-record/update"/>
 	
@@ -39,7 +39,7 @@
 		code="auditor.audit-record.form.button.create"
 		action="/auditor/audit-record/create"/>
 		
-	<acme:form-submit test="${command == 'update' }"
+	<acme:form-submit test="${command == 'update'}"
 		code="auditor.audit-record.form.button.update"
 		action="/auditor/audit-record/update"/>
 	
