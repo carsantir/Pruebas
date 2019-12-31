@@ -27,7 +27,11 @@
 	<acme:form-hidden path="id"/>
 	<acme:form-submit code="authenticated.job.form.label.duties" action="/authenticated/duty/list?id=${id}" method="get" />
 	<acme:form-submit code="authenticated.job.form.button.link" action="/authenticated/audit-record/list-all-active?id=${id}" method="get" />
-	<acme:form-submit code="authenticated.job.form.button.apply" action="/worker/application/create?jobId=${id}" method="get"/>
+	
+	<jstl:if test="${isWorker}">
+		<acme:form-submit code="authenticated.job.form.button.apply" action="/worker/application/create?jobId=${id}" method="get"/>
+	</jstl:if>
+	
 	<acme:form-submit code="authenticated.job.form.button.write" action="/auditor/audit-record/create?jobId=${id}" method="get" />
 		
 	<acme:form-return code="authenticated.job.form.button.return"/>
