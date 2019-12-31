@@ -80,7 +80,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert errors != null;
 
 		boolean isDuplicated;
-		isDuplicated = this.repository.findJobByReference(entity.getReference()) != null;
+		isDuplicated = this.repository.findJobByReference(entity.getReference()) != null && !entity.getReference().equals(this.repository.findOneJobById(entity.getId()).getReference());
 		errors.state(request, !isDuplicated, "reference", "employer.job.error.duplicated");
 
 		boolean workloadFinal;
