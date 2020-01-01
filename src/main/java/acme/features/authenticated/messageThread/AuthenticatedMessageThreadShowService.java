@@ -49,7 +49,15 @@ public class AuthenticatedMessageThreadShowService implements AbstractShowServic
 		assert entity != null;
 		assert model != null;
 
+		Principal principal;
+		principal = request.getPrincipal();
 		request.unbind(entity, model, "title", "moment", "authenticated.id");
+
+		if (entity.getAuthenticated().getId() != principal.getActiveRoleId()) {
+			model.setAttribute("isNotCreator", true);
+		} else {
+			model.setAttribute("isNotCreator", false);
+		}
 
 	}
 	@Override
