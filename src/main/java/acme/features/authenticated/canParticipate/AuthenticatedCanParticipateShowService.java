@@ -42,6 +42,12 @@ public class AuthenticatedCanParticipateShowService implements AbstractShowServi
 
 		request.unbind(entity, model, "authenticated.userAccount.username", "messageThread.title");
 
+		if (entity.getMessageThread().getAuthenticated().getId() != entity.getAuthenticated().getId()) {
+			model.setAttribute("isNotCreator", true);
+		} else {
+			model.setAttribute("isNotCreator", false);
+		}
+
 	}
 
 	@Override
