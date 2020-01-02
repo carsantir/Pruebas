@@ -1,10 +1,10 @@
 
-package acme.features.authenticated.auditor;
+package acme.features.authenticated.notActiveAuditor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.roles.Auditor;
+import acme.entities.roles.NotActiveAuditor;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -16,20 +16,20 @@ import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
-public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<Authenticated, Auditor> {
+public class AuthenticatedNotActiveAuditorUpdateService implements AbstractUpdateService<Authenticated, NotActiveAuditor> {
 
 	@Autowired
-	private AuthenticatedAuditorRepository repository;
+	private AuthenticatedNotActiveAuditorRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Auditor> request) {
+	public boolean authorise(final Request<NotActiveAuditor> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Auditor> request, final Auditor entity, final Errors errors) {
+	public void bind(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -39,7 +39,7 @@ public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<
 	}
 
 	@Override
-	public void unbind(final Request<Auditor> request, final Auditor entity, final Model model) {
+	public void unbind(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -49,23 +49,23 @@ public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<
 	}
 
 	@Override
-	public Auditor findOne(final Request<Auditor> request) {
+	public NotActiveAuditor findOne(final Request<NotActiveAuditor> request) {
 		assert request != null;
 
-		Auditor result;
+		NotActiveAuditor result;
 		Principal principal;
 		int userAccountId;
 
 		principal = request.getPrincipal();
 		userAccountId = principal.getAccountId();
 
-		result = this.repository.findOneAuditorByUserAccountId(userAccountId);
+		result = this.repository.findOneNotActiveAuditorByUserAccountId(userAccountId);
 
 		return result;
 	}
 
 	@Override
-	public void validate(final Request<Auditor> request, final Auditor entity, final Errors errors) {
+	public void validate(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -73,7 +73,7 @@ public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<
 	}
 
 	@Override
-	public void update(final Request<Auditor> request, final Auditor entity) {
+	public void update(final Request<NotActiveAuditor> request, final NotActiveAuditor entity) {
 		assert request != null;
 		assert entity != null;
 
@@ -81,7 +81,7 @@ public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<
 
 	}
 	@Override
-	public void onSuccess(final Request<Auditor> request, final Response<Auditor> response) {
+	public void onSuccess(final Request<NotActiveAuditor> request, final Response<NotActiveAuditor> response) {
 		assert request != null;
 		assert response != null;
 

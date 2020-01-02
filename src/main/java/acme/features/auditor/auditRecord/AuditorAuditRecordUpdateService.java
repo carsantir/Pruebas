@@ -34,6 +34,7 @@ public class AuditorAuditRecordUpdateService implements AbstractUpdateService<Au
 		isCreator = request.getPrincipal().getActiveRoleId() == auditRecord.getAuditor().getId() && auditRecord.isDraft();
 
 		return isCreator;
+
 	}
 
 	@Override

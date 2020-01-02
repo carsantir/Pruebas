@@ -466,7 +466,7 @@
 	<bean name="auditor1Auditor" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Auditor 1 Inc."/>
 		<property name="responsibilityStatement" value="Me responsabilizo de todo"/>
-		<property name="enabled" value="true"/>
+
 		<property name="userAccount" ref="auditor1UserAccount"/>
 	</bean>
 	
@@ -496,7 +496,6 @@
 	<bean name="auditor2Auditor" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Auditor 2 Inc."/>
 		<property name="responsibilityStatement" value="Me comprometo a todo"/>
-		<property name="enabled" value="true"/>
 		<property name="userAccount" ref="auditor2UserAccount"/>
 	</bean>
 	

@@ -21,10 +21,10 @@
 	<acme:form-checkbox code="administrator.auditor.form.label.enabled" path="enabled"/>
   <acme:form-submit test="${command == 'show' }"
 		code="administrator.auditor.form.button.update"
-		action="/administrator/auditor/update"/>	
+		action="/administrator/not-active-auditor/update"/>	
 	<acme:form-submit test="${command == 'update'}"
 		code="administrator.auditor.form.button.update"
-		action="/administrator/auditor/update"/>
+		action="/administrator/not-active-auditor/update"/>
 	<acme:form-return
 		code="administrator.auditor.form.button.return"/>
 </acme:form>
