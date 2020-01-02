@@ -1,6 +1,7 @@
 
 package acme.features.consumer.offer;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,10 +75,10 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 
 		deadLineMoment = request.getModel().getDate("deadline");
 
-		//		if (deadLineMoment != null) {
-		//			isFutureDate = deadLineMoment.after(Calendar.getInstance().getTime());
-		//			errors.state(request, isFutureDate, "deadline", "consumer.offer.error.must-be-future");
-		//		}
+		if (deadLineMoment != null) {
+			isFutureDate = deadLineMoment.after(Calendar.getInstance().getTime());
+			errors.state(request, isFutureDate, "deadline", "consumer.offer.error.must-be-future");
+		}
 
 		boolean isDuplicated;
 
