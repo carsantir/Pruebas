@@ -22,6 +22,8 @@
 	<acme:form-money code="auditor.job.form.label.salary" path="salary" />
 	<acme:form-url code="auditor.job.form.label.moreInfo" path="moreInfo" />
 	<acme:form-textbox code="auditor.job.form.label.employer" path="employer.userAccount.username" />
+	<acme:form-textbox code="auditor.job.form.label.propiedad1" path="propiedad1"/>
+	<acme:form-url code="auditor.job.form.label.propiedad2" path="propiedad2" />
 	<acme:form-textarea code="auditor.job.form.label.description" path="description" />
 	<acme:form-checkbox code="auditor.job.form.label.draft" path="draft" />
 	<acme:form-hidden path="id"/>

@@ -16,6 +16,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.entities.roles.Worker;
 import acme.framework.entities.DomainEntity;
@@ -54,6 +55,13 @@ public class Application extends DomainEntity {
 	private String				qualifications;
 
 	private String				justification;
+
+	private String				answer;
+
+	@URL
+	private String				propiedad3;
+
+	private String				password;
 
 	@NotNull
 	@Valid

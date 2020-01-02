@@ -49,7 +49,7 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors);
+		request.bind(entity, errors, "propiedad1", "propiedad2");
 	}
 
 	@Override

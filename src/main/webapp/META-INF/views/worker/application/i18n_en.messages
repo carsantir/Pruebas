@@ -18,7 +18,9 @@ worker.application.form.label.job.title = Job's title
 worker.application.form.label.job.reference = Job's reference
 worker.application.form.label.worker.userAccount.username = Worker's username
 worker.application.form.button.create = Apply job
-
+worker.application.form.label.answer=answer
+worker.application.form.label.propiedad3=propiedad3
+worker.application.form.label.password=password
 
 worker.application.list.label.referenceNumber = Reference
 worker.application.list.label.moment = Creation moment
@@ -30,3 +32,6 @@ worker.application.form.label.justification = Status justification
 worker.application.form.button.return = Return
 
 worker.application.error.duplicated = The reference number is already in use
+worker.application.error.answer = If you declare a propiedad3 you must write the answer first
+worker.application.error.propiedad3 = If you want to password protect a propiedad3 it must be declared
+worker.application.error.password = The password must be 8 characters long and must include: 3 digits, 3 letters and 3 of these symbols ¡!\"#$%&'()*+,./:;<=>¿?@[]^_‘{|}~  (ñ is not valid)

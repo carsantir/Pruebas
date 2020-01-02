@@ -24,6 +24,9 @@ employer.application.form.label.job.title = Job's title
 employer.application.form.label.job.reference = Job's reference
 employer.application.form.label.worker.userAccount.username = Worker's username
 employer.application.form.label.justification = Status justification
+employer.application.form.label.answer=answer
+employer.application.form.label.propiedad3=propiedad3
+employer.application.form.label.password=password
 
 employer.application.form.button.return = Return
 employer.application.form.button.reject = Reject

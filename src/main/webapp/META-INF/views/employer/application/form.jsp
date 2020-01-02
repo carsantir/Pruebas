@@ -25,6 +25,9 @@
 	<acme:form-textbox code="employer.application.form.label.job.title" path="job.title" readonly="true"/>
 	<acme:form-textbox code="employer.application.form.label.job.reference" path="job.reference" readonly="true"/>
 	<acme:form-textbox code="employer.application.form.label.worker.userAccount.username" path="worker.userAccount.username" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
+	<acme:form-url code="employer.application.form.label.propiedad3" path="propiedad3" readonly="true"/>
+	<acme:form-textbox code="employer.application.form.label.password" path="password" readonly="true"/>
 	<acme:form-textarea code="employer.application.form.label.justification" path="justification" />
 	
 	<acme:form-submit test="${command == 'show' && status == 'PENDING'}"

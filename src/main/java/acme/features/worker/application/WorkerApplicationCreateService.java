@@ -62,7 +62,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications");
+		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications", "answer", "propiedad3", "password");
 
 	}
 
@@ -108,6 +108,21 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		isDuplicated = this.repository.findApplicationByReference(entity.getReferenceNumber()) != null;
 		errors.state(request, !isDuplicated, "referenceNumber", "worker.application.error.duplicated");
 
+		boolean passwordCorrect;
+		boolean hasPropiedad3 = !entity.getPropiedad3().isEmpty() && entity.getPropiedad3() != null;
+
+		if (hasPropiedad3) {
+			boolean hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
+			errors.state(request, hasAnswer, "answer", "worker.application.error.answer");
+		}
+
+		if (!(entity.getPassword().isEmpty() || entity.getPassword() == null)) {
+			errors.state(request, hasPropiedad3, "propiedad3", "worker.application.error.propiedad3");
+
+			passwordCorrect = entity.getPassword().matches("^(?=(.*[A-Za-z]){3})(?=(.*[0-9]){3})(?=(.*[¡!\\\"\\\\#$%&'()*+,\\r\\n\\\\./:;<=>¿?@\\\\[\\r\\n\\\\]^_‘{|}~]){3}).+") && entity.getPassword().length() >= 8;
+			errors.state(request, passwordCorrect, "password", "worker.application.error.password");
+		}
+
 	}
 
 	@Override
@@ -122,21 +137,5 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		this.repository.save(entity);
 
 	}
-
-	/*
-	 * public void onSuccess(final Request<Application> request, final Response<Application> response) {
-	 * assert request != null;
-	 * assert response != null;
-	 *
-	 * String url = "./list-mine";
-	 *
-	 * try {
-	 * request.getServletResponse().sendRedirect(url);
-	 * } catch (IOException e) {
-	 * e.printStackTrace();
-	 * }
-	 *
-	 * }
-	 */
 
 }

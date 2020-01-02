@@ -31,7 +31,16 @@
 	</jstl:if>
 	
 	<jstl:if test="${command == 'create'}">
+		<acme:form-textbox code="worker.application.form.label.answer" path="answer" />
+		<acme:form-url code="worker.application.form.label.propiedad3" path="propiedad3" />
+		<acme:form-password code="worker.application.form.label.password" path="password" />
 		<acme:form-hidden path="job.id" />
+	</jstl:if>
+	
+	<jstl:if test="${command != 'create' }">
+	<acme:form-textbox code="worker.application.form.label.answer" path="answer" readonly="true" />
+		<acme:form-url code="worker.application.form.label.propiedad3" path="propiedad3" readonly="true" />
+		<acme:form-password code="worker.application.form.label.password" path="password" readonly="true" />
 	</jstl:if>
 	
 	<acme:form-submit test="${command == 'create'}"

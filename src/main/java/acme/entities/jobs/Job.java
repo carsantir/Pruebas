@@ -57,6 +57,12 @@ public class Job extends DomainEntity {
 
 	private String				description;
 
+	@Length(max = 10)
+	private String				propiedad1;
+
+	@URL
+	private String				propiedad2;
+
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)

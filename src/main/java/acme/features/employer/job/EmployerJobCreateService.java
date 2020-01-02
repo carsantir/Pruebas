@@ -43,7 +43,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description", "draft");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "moreInfo", "description", "draft", "propiedad1", "propiedad2");
 	}
 
 	@Override
@@ -84,6 +84,12 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		isDuplicated = this.repository.findJobByReference(entity.getReference()) != null;
 		errors.state(request, !isDuplicated, "reference", "employer.job.error.duplicated");
 
+		if (entity.getPropiedad2() != null && !entity.getPropiedad2().isEmpty()) {
+			boolean hasPropiedad1;
+			String propiedad1 = entity.getPropiedad1();
+			hasPropiedad1 = propiedad1 != null && !propiedad1.isEmpty();
+			errors.state(request, hasPropiedad1, "propiedad1", "employer.job.error.propiedad1");
+		}
 	}
 
 	@Override
