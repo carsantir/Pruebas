@@ -4,6 +4,7 @@ package acme.features.authenticated.notActiveAuditor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.roles.Auditor;
 import acme.entities.roles.NotActiveAuditor;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
@@ -76,6 +77,16 @@ public class AuthenticatedNotActiveAuditorUpdateService implements AbstractUpdat
 	public void update(final Request<NotActiveAuditor> request, final NotActiveAuditor entity) {
 		assert request != null;
 		assert entity != null;
+
+		int id = request.getPrincipal().getAccountId();
+
+		Auditor auditor = this.repository.findOneAuditorByUserAccountId(id);
+
+		if (auditor != null) {
+			auditor.setFirm(entity.getFirm());
+			auditor.setResponsibilityStatement(entity.getResponsibilityStatement());
+			this.repository.save(auditor);
+		}
 
 		this.repository.save(entity);
 

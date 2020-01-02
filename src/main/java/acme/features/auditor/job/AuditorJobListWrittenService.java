@@ -27,19 +27,6 @@ public class AuditorJobListWrittenService implements AbstractListService<Auditor
 	public boolean authorise(final Request<Job> request) {
 		assert request != null;
 
-		//				Principal principal;
-		//				int idPrincipal;
-		//				principal = request.getPrincipal();
-		//				idPrincipal = principal.getActiveRoleId();
-		//		
-		//				Collection<Integer> idNotEnabled = this.repository.findOneAuditorByEnabled();
-		//		
-		//				if (idNotEnabled.contains(idPrincipal)) {
-		//					return false;
-		//				} else {
-		//					return true;
-		//				}
-
 		return true;
 	}
 	@Override

@@ -22,4 +22,7 @@ public interface AuthenticatedDutyRepository extends AbstractRepository {
 	@Query("select j from Job j where j.id = (select d.job.id from Duty d where d.id=?1)")
 	Job findJobFromDutyId(int id);
 
+	@Query("select j from Job j where j.id =?1")
+	Job findJobFromId(int id);
+
 }

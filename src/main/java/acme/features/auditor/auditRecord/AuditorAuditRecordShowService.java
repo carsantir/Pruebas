@@ -25,8 +25,8 @@ public class AuditorAuditRecordShowService implements AbstractShowService<Audito
 		AuditRecord ar = this.repository.findOneAuditRecordById(id);
 
 		return !ar.isDraft() || ar.isDraft() && ar.getAuditor().getId() == request.getPrincipal().getActiveRoleId();
-
 	}
+
 	@Override
 	public void unbind(final Request<AuditRecord> request, final AuditRecord entity, final Model model) {
 		assert request != null;

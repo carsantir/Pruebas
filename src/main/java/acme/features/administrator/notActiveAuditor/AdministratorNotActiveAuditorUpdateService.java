@@ -7,10 +7,13 @@ import org.springframework.stereotype.Service;
 import acme.entities.roles.Auditor;
 import acme.entities.roles.NotActiveAuditor;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.components.Response;
 import acme.framework.entities.Administrator;
 import acme.framework.entities.UserAccount;
+import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
@@ -88,4 +91,15 @@ public class AdministratorNotActiveAuditorUpdateService implements AbstractUpdat
 		this.repository.save(entity);
 
 	}
+
+	@Override
+	public void onSuccess(final Request<NotActiveAuditor> request, final Response<NotActiveAuditor> response) {
+		assert request != null;
+		assert response != null;
+
+		if (request.isMethod(HttpMethod.POST)) {
+			PrincipalHelper.handleUpdate();
+		}
+	}
+
 }

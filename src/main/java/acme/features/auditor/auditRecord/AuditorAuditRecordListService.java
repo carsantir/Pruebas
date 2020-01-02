@@ -22,18 +22,7 @@ public class AuditorAuditRecordListService implements AbstractListService<Audito
 	@Override
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
-		//		Principal principal;
-		//		int idPrincipal;
-		//		principal = request.getPrincipal();
-		//		idPrincipal = principal.getAccountId();
 
-		//		Collection<Integer> idNotEnabled = this.repository.findOneAuditorByEnabled();
-		//
-		//		if (idNotEnabled.contains(idPrincipal)) {
-		//			return false;
-		//		} else {
-		//			return true;
-		//		}
 		return true;
 	}
 
