@@ -83,6 +83,7 @@ master.menu.consumer.offers.create = Crear ofertas
 
 master.menu.worker = Trabajador
 master.menu.worker.application.list-mine = Listar mis aplicaciones
+master.menu.worker.application.create = Solicitar un trabajo activo
 
 
 # master.menu.employer ##########################################################

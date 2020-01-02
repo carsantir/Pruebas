@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.jobs.Job;
 import acme.entities.roles.Employer;
+import acme.entities.roles.Worker;
 import acme.framework.entities.UserAccount;
 import acme.framework.repositories.AbstractRepository;
 
@@ -26,4 +27,7 @@ public interface AuthenticatedJobRepository extends AbstractRepository {
 
 	@Query("select e from Employer e where e.id = (select j.employer.id from Job j where j.id = ?1 )")
 	Employer findEmployer(int id);
+
+	@Query("select w from Worker w where w.userAccount.id = ?1")
+	Worker findOneWorkerByUserAccountId(int uaId);
 }
