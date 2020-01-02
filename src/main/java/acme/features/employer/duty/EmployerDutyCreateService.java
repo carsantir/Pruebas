@@ -48,7 +48,7 @@ public class EmployerDutyCreateService implements AbstractCreateService<Employer
 		}
 		employer = job.getEmployer();
 		principal = request.getPrincipal();
-		result = employer.getUserAccount().getId() == principal.getAccountId();
+		result = employer.getUserAccount().getId() == principal.getAccountId() && job.isDraft();
 
 		return result;
 	}

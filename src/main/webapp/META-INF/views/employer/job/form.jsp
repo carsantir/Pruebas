@@ -36,7 +36,7 @@
 	<acme:form-hidden path="id"/>
 		<jstl:if test="${command == 'show'}">
 			<acme:form-submit code="employer.job.form.label.duty" action="/employer/duty/list?id=${id}" method="get"/>
-			<acme:form-submit code="employer.job.form.button.create.duty" action="/employer/duty/create?jobId=${id}" method="get"/>
+			<acme:form-submit test="${draft}" code="employer.job.form.button.create.duty" action="/employer/duty/create?jobId=${id}" method="get"/>
 			<acme:form-submit code="employer.job.form.button.link" action="/employer/audit-record/list-all-active?id=${id}" method="get" />
 		</jstl:if>
 	<acme:form-submit test="${command == 'create'}"
