@@ -45,7 +45,7 @@ public class EmployerDutyShowService implements AbstractShowService<Employer, Du
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "description", "percentage", "job.reference");
+		request.unbind(entity, model, "title", "description", "percentage", "job.reference", "job.draft");
 	}
 	@Override
 	public Duty findOne(final Request<Duty> request) {

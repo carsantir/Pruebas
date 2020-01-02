@@ -83,6 +83,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		boolean isDuplicated;
 		isDuplicated = this.repository.findJobByReference(entity.getReference()) != null;
 		errors.state(request, !isDuplicated, "reference", "employer.job.error.duplicated");
+
 	}
 
 	@Override

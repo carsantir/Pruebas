@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Auditor;
 import acme.entities.roles.Employer;
+import acme.entities.roles.Worker;
 import acme.framework.entities.UserAccount;
 import acme.framework.repositories.AbstractRepository;
 
@@ -30,4 +31,8 @@ public interface AuthenticatedJobRepository extends AbstractRepository {
 
 	@Query("select a from Auditor a where a.userAccount.id = ?1")
 	Auditor findAuditorById(int id);
+
+	@Query("select w from Worker w where w.userAccount.id = ?1")
+	Worker findOneWorkerByUserAccountId(int uaId);
+
 }
