@@ -17,10 +17,13 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	
-	<definition name="authenticated/auditor/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/auditor/form.jsp" />
-	</definition>
 
+	<definition name="administrator/not-active-auditor/list" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/not-active-auditor/list.jsp" />
+	</definition>
+	
+	<definition name="administrator/not-active-auditor/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/not-active-auditor/form.jsp" />
+	</definition>
 
 </tiles-definitions>

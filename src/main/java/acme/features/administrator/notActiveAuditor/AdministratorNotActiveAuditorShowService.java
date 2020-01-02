@@ -10,32 +10,50 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.administrator.auditor;
+package acme.features.administrator.notActiveAuditor;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.roles.Auditor;
+import acme.entities.roles.NotActiveAuditor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorAuditorShowService implements AbstractShowService<Administrator, Auditor> {
+public class AdministratorNotActiveAuditorShowService implements AbstractShowService<Administrator, NotActiveAuditor> {
 
 	@Autowired
-	private AdministratorAuditorRepository repository;
+	private AdministratorNotActiveAuditorRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Auditor> request) {
+	public boolean authorise(final Request<NotActiveAuditor> request) {
 		assert request != null;
-		return true;
+
+		Collection<Integer> idNotEnabled = this.repository.findOneNotActiveAuditorByEnabled();
+
+		int id;
+		String url = request.getServletRequest().getQueryString();
+		if (url != null) {
+			String[] aux = url.split("id=");
+			id = Integer.parseInt(aux[1]);
+		} else {
+			id = request.getModel().getInteger("notActiveAuditor.id");
+		}
+		if (idNotEnabled.contains(id)) {
+			return false;
+		} else {
+			return true;
+		}
+
 	}
 
 	@Override
-	public void unbind(final Request<Auditor> request, final Auditor entity, final Model model) {
+	public void unbind(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -45,10 +63,10 @@ public class AdministratorAuditorShowService implements AbstractShowService<Admi
 	}
 
 	@Override
-	public Auditor findOne(final Request<Auditor> request) {
+	public NotActiveAuditor findOne(final Request<NotActiveAuditor> request) {
 		assert request != null;
 
-		Auditor result;
+		NotActiveAuditor result;
 		int id;
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);

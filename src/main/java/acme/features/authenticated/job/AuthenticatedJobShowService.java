@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
+import acme.entities.roles.Auditor;
 import acme.entities.roles.Employer;
 import acme.entities.roles.Worker;
 import acme.framework.components.Model;
@@ -51,12 +52,20 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		request.unbind(entity, model, "reference", "title", "deadline");
 		request.unbind(entity, model, "salary", "moreInfo", "draft", "description", "id", "employer.userAccount.username");
 
+
+		Auditor auditor = this.repository.findAuditorById(request.getPrincipal().getAccountId());
+		if (auditor != null) {
+			model.setAttribute("isAuditor", true);
+		} else {
+			model.setAttribute("isAuditor", false);
+
 		Worker worker = this.repository.findOneWorkerByUserAccountId(request.getPrincipal().getAccountId());
 
 		if (worker != null) {
 			model.setAttribute("isWorker", true);
 		} else {
 			model.setAttribute("isWorker", false);
+
 		}
 	}
 	@Override

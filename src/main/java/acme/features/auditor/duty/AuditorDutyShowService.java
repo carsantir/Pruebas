@@ -1,7 +1,9 @@
 
 package acme.features.auditor.duty;
 
-import java.util.Collection;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +12,6 @@ import acme.entities.jobs.Duty;
 import acme.entities.roles.Auditor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -24,19 +25,17 @@ public class AuditorDutyShowService implements AbstractShowService<Auditor, Duty
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
 
-		Principal principal;
-		int idPrincipal;
-		principal = request.getPrincipal();
-		idPrincipal = principal.getActiveRoleId();
+		int id = request.getModel().getInteger("id");
+		Duty duty = this.repository.findOneDutyById(id);
 
-		Collection<Integer> idNotEnabled = this.repository.findOneAuditorByEnabled();
+		Calendar actual = new GregorianCalendar();
 
-		if (idNotEnabled.contains(idPrincipal)) {
-			return false;
-		} else {
-			return true;
-		}
+		Date fechaActual = actual.getTime();
+		boolean result = !duty.getJob().isDraft() && duty.getJob().getDeadline().after(fechaActual);
+
+		return result;
 	}
+
 	@Override
 	public void unbind(final Request<Duty> request, final Duty entity, final Model model) {
 		assert request != null;

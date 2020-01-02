@@ -1,6 +1,10 @@
 
 package acme.features.authenticated.duty;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,10 +25,17 @@ public class AuthenticatedDutyShowService implements AbstractShowService<Authent
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
 
-		boolean result = true;
+		int id = request.getModel().getInteger("id");
+		Duty duty = this.repository.findOneDutyById(id);
+
+		Calendar actual = new GregorianCalendar();
+
+		Date fechaActual = actual.getTime();
+		boolean result = !duty.getJob().isDraft() && duty.getJob().getDeadline().after(fechaActual);
 
 		return result;
 	}
+
 	@Override
 	public void unbind(final Request<Duty> request, final Duty entity, final Model model) {
 		assert request != null;

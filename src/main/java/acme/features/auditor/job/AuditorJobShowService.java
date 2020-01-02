@@ -2,7 +2,6 @@
 package acme.features.auditor.job;
 
 import java.util.Calendar;
-import java.util.Collection;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -14,7 +13,6 @@ import acme.entities.roles.Auditor;
 import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -31,26 +29,19 @@ public class AuditorJobShowService implements AbstractShowService<Auditor, Job> 
 		boolean result;
 		int jobId;
 		Job job;
-		Employer employer;
-		Principal principal;
-		int idPrincipal;
+
 		jobId = request.getModel().getInteger("id");
 		job = this.repository.findOneJobById(jobId);
-		employer = job.getEmployer();
-		principal = request.getPrincipal();
+
 		Calendar actual = new GregorianCalendar();
 		Date fechaActual = actual.getTime();
-		idPrincipal = principal.getActiveRoleId();
 
-		Collection<Integer> idNotEnabled = this.repository.findOneAuditorByEnabled();
+		result = !job.isDraft() && job.getDeadline().after(fechaActual);
 
-		if (idNotEnabled.contains(idPrincipal)) {
-			return false;
-		} else {
-			result = !job.isDraft() && job.getDeadline().after(fechaActual) || (job.isDraft() || !job.getDeadline().after(fechaActual)) && employer.getUserAccount().getId() == principal.getAccountId();
-		}
 		return result;
+
 	}
+
 	@Override
 	public void unbind(final Request<Job> request, final Job entity, final Model model) {
 		assert request != null;

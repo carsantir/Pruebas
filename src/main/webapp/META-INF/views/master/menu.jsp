@@ -48,7 +48,7 @@
      		<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenge/list"/>
      		<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenge/create"/>
      		<acme:menu-separator/>
-     		<acme:menu-suboption code="master.menu.administrator.auditor" action="/administrator/auditor/list"/>
+     		<acme:menu-suboption code="master.menu.administrator.auditor" action="/administrator/not-active-auditor/list"/>
      		<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.investor-record" action="/administrator/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.investor-record.create" action="/administrator/investor-record/create"/>
@@ -110,8 +110,8 @@
 			<acme:menu-suboption code="master.menu.user-account.employer" action="/authenticated/employer/update" access="hasRole('Employer')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-worker" action="/authenticated/worker/create" access="!hasRole('Worker')"/>
 			<acme:menu-suboption code="master.menu.user-account.worker" action="/authenticated/worker/update" access="hasRole('Worker')"/>
-			<acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/auditor/create" access="!hasRole('Auditor')"/>
-			<acme:menu-suboption code="master.menu.user-account.auditor" action="/authenticated/auditor/update" access="hasRole('Auditor')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/not-active-auditor/create" access="!hasRole('NotActiveAuditor')"/>
+			<acme:menu-suboption code="master.menu.user-account.auditor" action="/authenticated/not-active-auditor/update" access="hasRole('NotActiveAuditor')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-sponsor" action="/authenticated/sponsor/create" access="!hasRole('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.sponsor" action="/authenticated/sponsor/update" access="hasRole('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>

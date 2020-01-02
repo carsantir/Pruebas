@@ -1,10 +1,10 @@
 
-package acme.features.authenticated.auditor;
+package acme.features.authenticated.notActiveAuditor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.roles.Auditor;
+import acme.entities.roles.NotActiveAuditor;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -17,18 +17,18 @@ import acme.framework.helpers.PrincipalHelper;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AuthenticatedAuditorCreateService implements AbstractCreateService<Authenticated, Auditor> {
+public class AuthenticatedNotActiveAuditorCreateService implements AbstractCreateService<Authenticated, NotActiveAuditor> {
 
 	@Autowired
-	private AuthenticatedAuditorRepository repository;
+	private AuthenticatedNotActiveAuditorRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Auditor> request) {
+	public boolean authorise(final Request<NotActiveAuditor> request) {
 		assert request != null;
 		Principal principal;
 		principal = request.getPrincipal();
-		Auditor a = this.repository.findOneAuditorByUserAccountId(principal.getAccountId());
+		NotActiveAuditor a = this.repository.findOneNotActiveAuditorByUserAccountId(principal.getAccountId());
 		if (a == null) {
 			return true;
 		} else {
@@ -38,7 +38,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void bind(final Request<Auditor> request, final Auditor entity, final Errors errors) {
+	public void bind(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -48,7 +48,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void unbind(final Request<Auditor> request, final Auditor entity, final Model model) {
+	public void unbind(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -58,10 +58,10 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public Auditor instantiate(final Request<Auditor> request) {
+	public NotActiveAuditor instantiate(final Request<NotActiveAuditor> request) {
 		assert request != null;
 
-		Auditor result;
+		NotActiveAuditor result;
 		Principal principal;
 		int userAccountId;
 		UserAccount userAccount;
@@ -70,7 +70,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 		userAccountId = principal.getAccountId();
 		userAccount = this.repository.findOneUserAccountById(userAccountId);
 
-		result = new Auditor();
+		result = new NotActiveAuditor();
 		result.setEnabled(false);
 		result.setUserAccount(userAccount);
 
@@ -78,7 +78,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void validate(final Request<Auditor> request, final Auditor entity, final Errors errors) {
+	public void validate(final Request<NotActiveAuditor> request, final NotActiveAuditor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -86,7 +86,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void create(final Request<Auditor> request, final Auditor entity) {
+	public void create(final Request<NotActiveAuditor> request, final NotActiveAuditor entity) {
 		assert request != null;
 		assert entity != null;
 
@@ -94,7 +94,7 @@ public class AuthenticatedAuditorCreateService implements AbstractCreateService<
 
 	}
 	@Override
-	public void onSuccess(final Request<Auditor> request, final Response<Auditor> response) {
+	public void onSuccess(final Request<NotActiveAuditor> request, final Response<NotActiveAuditor> response) {
 		assert request != null;
 		assert response != null;
 

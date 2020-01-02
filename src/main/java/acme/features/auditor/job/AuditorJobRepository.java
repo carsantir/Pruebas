@@ -26,6 +26,4 @@ public interface AuditorJobRepository extends AbstractRepository {
 	@Query("select e from Employer e where e.id= (select j.employer.id from Job j where j.id=?1)")
 	Employer findEmployer(int id);
 
-	@Query("select id from Auditor a where a.enabled=0")
-	Collection<Integer> findOneAuditorByEnabled();
 }
