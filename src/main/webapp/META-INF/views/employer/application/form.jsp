@@ -26,10 +26,11 @@
 	<acme:form-textbox code="employer.application.form.label.job.reference" path="job.reference" readonly="true"/>
 	<acme:form-textbox code="employer.application.form.label.worker.userAccount.username" path="worker.userAccount.username" readonly="true"/>
 	
-	<jstl:if test="${job.propiedad1 != null}">
+	<jstl:if test="${hasPropiedad1}">
+		<acme:form-hidden path="hasPropiedad1"/>
 		<acme:form-textbox code="employer.application.form.label.answer" path="answer" readonly="true"/>
 		<acme:form-url code="employer.application.form.label.propiedad3" path="propiedad3" readonly="true"/>
-		<acme:form-textbox code="employer.application.form.label.password" path="password" readonly="true"/>
+		<acme:form-password code="employer.application.form.label.password" path="passwordPropiedad3" readonly="true"/>
 	</jstl:if>
 	
 	<acme:form-textarea code="employer.application.form.label.justification" path="justification" />

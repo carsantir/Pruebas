@@ -105,7 +105,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select 1.0 * count(j) / (select count(o) from Job o where o.propiedad1 != null) from Job j where j.propiedad2 != ''")
 	Double ratioOfPropiedad1WithPropiedad2();
 
-	@Query("select 1.0 * count(a) / (select count (p) from Application p) from Application a where a.password != null")
+	@Query("select 1.0 * count(a) / (select count (p) from Application p) from Application a where a.passwordPropiedad3 != null")
 	Double ratioOfPropiedad3Protected();
 
 	@Query("select 1.0 * count(*) from Job j where j.propiedad1 != null")

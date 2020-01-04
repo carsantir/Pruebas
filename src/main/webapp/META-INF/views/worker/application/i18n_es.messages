@@ -20,7 +20,7 @@ worker.application.form.label.worker.userAccount.username = Usuario del trabajad
 worker.application.form.button.create = Solicitar trabajo
 worker.application.form.label.answer=answer
 worker.application.form.label.propiedad3=propiedad3
-worker.application.form.label.password=password
+worker.application.form.label.password=passwordPropiedad3
 
 
 worker.application.list.label.referenceNumber = Referencia
@@ -34,5 +34,5 @@ worker.application.form.button.return = Volver
 
 worker.application.error.duplicated = El número de referencia ya está en uso
 worker.application.error.answer = Si declaras una propiedad3 debes escribir una respuesta primero
-worker.application.error.propiedad3 = Si proteges con contraseña una propiedad3 esta debe estar declarada primero
-worker.application.error.password = La contraseña tiene que ser 8 caracteres de largo y debe incluir: 3 dígitos, 3 letras and 3 de los siguientes símbolos ¡!\"#$%&'()*+,./:;<=>¿?@[]^_‘{|}~  (ñ no es válida)
+worker.application.error.propiedad3 = Si proteges con passwordPropiedad3 una propiedad3 esta debe estar declarada primero
+worker.application.error.password = La passwordPropiedad3 tiene que ser 8 caracteres de largo y debe incluir: 3 dígitos, 3 letras and 3 de los siguientes símbolos ¡!\"#$%&'()*+,./:;<=>¿?@[]^_‘{|}~  (ñ no es válida)

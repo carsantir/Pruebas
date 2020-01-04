@@ -61,7 +61,7 @@ public class Application extends DomainEntity {
 	@URL
 	private String				propiedad3;
 
-	private String				password;
+	private String				passwordPropiedad3;
 
 	@NotNull
 	@Valid
