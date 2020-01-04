@@ -62,7 +62,18 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications", "answer", "propiedad3", "password", "job.propiedad1");
+		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications", "answer", "propiedad3", "passwordPropiedad3", "job.propiedad1");
+
+		boolean hasPropiedad1;
+
+		Job job;
+
+		job = entity.getJob();
+
+		hasPropiedad1 = job.getPropiedad1() != null && !job.getPropiedad1().isEmpty();
+
+		model.setAttribute("hasPropiedad1", hasPropiedad1);
+
 	}
 
 	@Override
@@ -115,11 +126,11 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 			errors.state(request, hasAnswer, "answer", "worker.application.error.answer");
 		}
 
-		if (!(entity.getPassword() == null || entity.getPassword().isEmpty())) {
+		if (!(entity.getPasswordPropiedad3() == null || entity.getPasswordPropiedad3().isEmpty())) {
 			errors.state(request, hasPropiedad3, "propiedad3", "worker.application.error.propiedad3");
 
-			passwordCorrect = entity.getPassword().matches("^(?=(.*[A-Za-z]){3})(?=(.*[0-9]){3})(?=(.*[¡!\\\"\\\\#$%&'()*+,\\r\\n\\\\./:;<=>¿?@\\\\[\\r\\n\\\\]^_‘{|}~]){3}).+") && entity.getPassword().length() >= 8;
-			errors.state(request, passwordCorrect, "password", "worker.application.error.password");
+			passwordCorrect = entity.getPasswordPropiedad3().matches("^(?=(.*[A-Za-z]){3})(?=(.*[0-9]){3})(?=(.*[¡!\\\"\\\\#$%&'()*+,\\r\\n\\\\./:;<=>¿?@\\\\[\\r\\n\\\\]^_‘{|}~]){3}).+") && entity.getPasswordPropiedad3().length() >= 8;
+			errors.state(request, passwordCorrect, "passwordPropiedad3", "worker.application.error.password");
 		}
 
 	}

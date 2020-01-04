@@ -630,7 +630,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker1Worker"/>
@@ -651,7 +651,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker1Worker"/>
@@ -672,7 +672,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker1Worker"/>
@@ -838,7 +838,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker2Worker"/>
@@ -859,7 +859,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker2Worker"/>
@@ -880,7 +880,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker3Worker"/>
@@ -901,7 +901,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker4Worker"/>
@@ -922,7 +922,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker5Worker"/>
@@ -943,7 +943,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker6Worker"/>
@@ -964,7 +964,7 @@
 		<property name="propiedad3">
 			<null />
 		</property>
-		<property name="password">
+		<property name="passwordPropiedad3">
 			<null />
 		</property>
 		<property name="worker" ref="worker1Worker"/>

@@ -47,7 +47,7 @@ public class EmployerApplicationRejectService implements AbstractUpdateService<E
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "statement", "answer", "propiedad3", "password");
+		request.bind(entity, errors, "statement", "answer", "propiedad3", "passwordPropiedad3");
 	}
 
 	@Override
@@ -57,6 +57,16 @@ public class EmployerApplicationRejectService implements AbstractUpdateService<E
 		assert model != null;
 
 		request.unbind(entity, model, "referenceNumber", "moment", "status", "skills", "qualifications", "job.title", "job.reference", "worker.userAccount.username", "justification", "job.propiedad1");
+
+		boolean hasPropiedad1;
+
+		Job job;
+
+		job = entity.getJob();
+
+		hasPropiedad1 = job.getPropiedad1() != null && !job.getPropiedad1().isEmpty();
+
+		model.setAttribute("hasPropiedad1", hasPropiedad1);
 	}
 
 	@Override
