@@ -48,7 +48,7 @@ public class EmployerApplicationAcceptService implements AbstractUpdateService<E
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "statement");
+		request.bind(entity, errors, "statement", "answer", "propiedad3", "password");
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class EmployerApplicationAcceptService implements AbstractUpdateService<E
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "referenceNumber", "moment", "status", "skills", "qualifications", "job.title", "job.reference", "worker.userAccount.username", "justification");
+		request.unbind(entity, model, "referenceNumber", "moment", "status", "skills", "qualifications", "job.title", "job.reference", "worker.userAccount.username", "justification", "job.propiedad1");
 	}
 
 	@Override

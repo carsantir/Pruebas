@@ -8,6 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+administrator.dashboard.form.label.ratioOfJobsPropiedad1 = Ratio of jobs with propiedad1
+administrator.dashboard.form.label.ratioOfPropiedad1WithPropiedad2 = Ratio of propiedad1 with propiedad2
+administrator.dashboard.form.label.ratioOfPropiedad3Protected = Ratio of applications with propiedad3 with password
 
 administrator.dashboard.form.label.totalAnnouncements = Total Announcements 
 administrator.dashboard.form.label.totalCompanyRecords = Total Company Records

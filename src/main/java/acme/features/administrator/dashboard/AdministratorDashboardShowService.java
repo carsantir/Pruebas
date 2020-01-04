@@ -46,6 +46,12 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		Dashboard result = new Dashboard();
 
+		result.setRatioOfJobsWithPropiedad1(this.repository.ratioOfJobsWithPropiedad1());
+
+		result.setRatioOfPropiedad1WithPropiedad2(this.repository.ratioOfPropiedad1WithPropiedad2());
+
+		result.setRatioOfPropiedad3Protected(this.repository.ratioOfPropiedad3Protected());
+
 		result.setTotalAnnouncements(this.repository.getTotalAnnouncement());
 		result.setTotalCompanyRecords(this.repository.getTotalCompanyRecord());
 		result.setTotalInvestorRecords(this.repository.getTotalInvestorRecord());

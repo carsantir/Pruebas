@@ -16,6 +16,11 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+
+	<acme:form-textbox code="administrator.dashboard.form.label.ratioOfJobsPropiedad1" path="ratioOfJobsWithPropiedad1"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.ratioOfPropiedad1WithPropiedad2" path="ratioOfPropiedad1WithPropiedad2"/>
+	<acme:form-textbox code="administrator.dashboard.form.label.ratioOfPropiedad3Protected" path="ratioOfPropiedad3Protected"/>
+
 	<acme:form-textbox code="administrator.dashboard.form.label.totalAnnouncements" path="totalAnnouncements"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.totalCompanyRecords" path="totalCompanyRecords"/>
 	<acme:form-textbox code="administrator.dashboard.form.label.totalInvestorRecords" path="totalInvestorRecords"/>

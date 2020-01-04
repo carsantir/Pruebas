@@ -50,8 +50,7 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert model != null;
 
 		request.unbind(entity, model, "reference", "title", "deadline");
-		request.unbind(entity, model, "salary", "moreInfo", "draft", "description", "id", "employer.userAccount.username");
-
+		request.unbind(entity, model, "salary", "moreInfo", "draft", "description", "id", "employer.userAccount.username", "propiedad1", "propiedad2");
 
 		Auditor auditor = this.repository.findAuditorById(request.getPrincipal().getAccountId());
 		if (auditor != null) {
@@ -59,6 +58,7 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		} else {
 			model.setAttribute("isAuditor", false);
 
+		}
 		Worker worker = this.repository.findOneWorkerByUserAccountId(request.getPrincipal().getAccountId());
 
 		if (worker != null) {

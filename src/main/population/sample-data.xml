@@ -303,6 +303,12 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
+		<property name="propiedad1">
+			<null />
+		</property>
+		<property name="propiedad2">
+			<null />
+		</property>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -360,6 +366,12 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
+		<property name="propiedad1">
+			<null />
+		</property>
+		<property name="propiedad2">
+			<null />
+		</property>
 		<property name="employer" ref="employer2Employer"/>
 	</bean>
 	
@@ -387,6 +399,12 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="true"/>
 		<property name="description" value="this is a description" />
+		<property name="propiedad1">
+			<null />
+		</property>
+		<property name="propiedad2">
+			<null />
+		</property>
 		<property name="employer" ref="employer2Employer"/>
 	</bean>
 	
@@ -413,6 +431,12 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
+		<property name="propiedad1">
+			<null />
+		</property>
+		<property name="propiedad2">
+			<null />
+		</property>
 		<property name="employer" ref="employer2Employer"/>
 	</bean>
 	
@@ -439,6 +463,12 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
+		<property name="propiedad1">
+			<null />
+		</property>
+		<property name="propiedad2">
+			<null />
+		</property>
 		<property name="employer" ref="employer1Employer"/>
 
 	</bean>
@@ -594,6 +624,15 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -606,6 +645,15 @@
 		<property name="statement" value="Statement 2"/>
 		<property name="skills" value="Skill 2"/>
 		<property name="qualifications" value="Qualification 2"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job2"/>
 	</bean>
@@ -618,6 +666,15 @@
 		<property name="statement" value="Statement 3"/>
 		<property name="skills" value="Skill 3"/>
 		<property name="qualifications" value="Qualification 3"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job3"/>
 	</bean>
@@ -775,6 +832,15 @@
 		<property name="statement" value="Statement 4"/>
 		<property name="skills" value="Skill 4"/>
 		<property name="qualifications" value="Qualification 4"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -787,6 +853,15 @@
 		<property name="statement" value="Statement 5"/>
 		<property name="skills" value="Skill 5"/>
 		<property name="qualifications" value="Qualification 5"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job2"/>
 	</bean>
@@ -799,6 +874,15 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker3Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -811,6 +895,15 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker4Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -823,6 +916,15 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker5Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -835,6 +937,15 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker6Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -847,6 +958,15 @@
 		<property name="statement" value="Statement 2"/>
 		<property name="skills" value="Skill 2"/>
 		<property name="qualifications" value="Qualification 2"/>
+		<property name="answer">
+			<null />
+		</property>
+		<property name="propiedad3">
+			<null />
+		</property>
+		<property name="password">
+			<null />
+		</property>
 		<property name="worker" ref="worker1Worker"/>
 		<property name="job" ref="job5"/>
 	</bean>

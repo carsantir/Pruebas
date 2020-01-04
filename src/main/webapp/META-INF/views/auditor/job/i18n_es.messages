@@ -26,3 +26,5 @@ auditor.job.form.button.link = Listar registros de auditoría
 auditor.job.form.label.employer=Empleador
 auditor.job.form.label.duty=Ver deberes
 auditor.job.form.button.write = Escribir registro de auditoría
+auditor.job.form.label.propiedad1=propiedad1
+auditor.job.form.label.propiedad2=propiedad2

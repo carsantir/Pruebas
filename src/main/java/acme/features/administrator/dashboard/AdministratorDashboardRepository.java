@@ -99,4 +99,13 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(*) from Application a where a.status = acme.entities.jobs.Status.REJECTED and year(a.moment) = year(?1) and month(a.moment) = month(?1) and day(a.moment) = day(?1)")
 	Integer rejectedApplicationsPerDay(Date fecha);
 
+	@Query("(select count(*) from Job j where j.propiedad1 != '') / (select count(*) from Job o)")
+	Double ratioOfJobsWithPropiedad1();
+
+	@Query("(select count(*) from Job j where j.propiedad2 != '') / (select count(*) from Job o where o.propiedad1 != '' )")
+	Double ratioOfPropiedad1WithPropiedad2();
+
+	@Query("(select count(*) from Application a where a.password != '') / (select count (*) from Application p)")
+	Double ratioOfPropiedad3Protected();
+
 }
