@@ -30,18 +30,19 @@
 	<acme:form-textbox code="worker.application.form.label.worker.userAccount.username" path="worker.userAccount.username" readonly="true"/>
 	</jstl:if>
 	
-	<jstl:if test="${command == 'create' && job.propiedad1 != null}">
+	<jstl:if test="${command == 'create' }">
+		<acme:form-hidden path="job.id" />
+	</jstl:if>
+	
+	<jstl:if test="${command == 'create' && job.propiedad1 == null}">
 		<acme:form-textbox code="worker.application.form.label.answer" path="answer" />
 		<acme:form-url code="worker.application.form.label.propiedad3" path="propiedad3" />
 		<acme:form-password code="worker.application.form.label.password" path="password" />
 	</jstl:if>
 	
-	<jstl:if test="${command == 'create' }">
-		<acme:form-hidden path="job.id" />
-	</jstl:if>
 	
 	<jstl:if test="${command != 'create' && job.propiedad1 != null}">
-	<acme:form-textbox code="worker.application.form.label.answer" path="answer" readonly="true" />
+		<acme:form-textbox code="worker.application.form.label.answer" path="answer" readonly="true" />
 		<acme:form-url code="worker.application.form.label.propiedad3" path="propiedad3" readonly="true" />
 		<acme:form-password code="worker.application.form.label.password" path="password" readonly="true" />
 	</jstl:if>

@@ -34,9 +34,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalAnnouncements", "totalCompanyRecords", "totalInvestorRecords", "minRewardRequest", "maxRewardRequest", "averageRewardRequest", "sdRewardRequest", "minRewardOffer", "maxRewardOffer", "averageRewardOffer",
-			"sdMinRewardOffer", "sdMaxRewardOffer", "companiesPerSector", "companySectors", "investorsPerSector", "investorSectors", "avgJobsPerEmployer", "avgApplicationsPerEmployer", "avgApplicationsPerWorker", "ratioOfPendingApplications",
-			"ratioOfAcceptedApplications", "ratioOfRejectedApplications", "ratioOfDraftJobs", "ratioOfPublishedJobs", "lastFourWeeksPerDay", "pendingApplicationsPerDay", "acceptedApplicationsPerDay", "rejectedApplicationsPerDay");
+		request.unbind(entity, model, "ratioOfJobsWithPropiedad1", "ratioOfPropiedad1WithPropiedad2", "ratioOfPropiedad3Protected", "totalAnnouncements", "totalCompanyRecords", "totalInvestorRecords", "minRewardRequest", "maxRewardRequest",
+			"averageRewardRequest", "sdRewardRequest", "minRewardOffer", "maxRewardOffer", "averageRewardOffer", "sdMinRewardOffer", "sdMaxRewardOffer", "companiesPerSector", "companySectors", "investorsPerSector", "investorSectors", "avgJobsPerEmployer",
+			"avgApplicationsPerEmployer", "avgApplicationsPerWorker", "ratioOfPendingApplications", "ratioOfAcceptedApplications", "ratioOfRejectedApplications", "ratioOfDraftJobs", "ratioOfPublishedJobs", "lastFourWeeksPerDay",
+			"pendingApplicationsPerDay", "acceptedApplicationsPerDay", "rejectedApplicationsPerDay");
+
 	}
 
 	@Override
@@ -48,7 +50,13 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		result.setRatioOfJobsWithPropiedad1(this.repository.ratioOfJobsWithPropiedad1());
 
-		result.setRatioOfPropiedad1WithPropiedad2(this.repository.ratioOfPropiedad1WithPropiedad2());
+		Double condicionParaQuery2 = this.repository.numberOfPropiedad1();
+
+		if (condicionParaQuery2 == 0) {
+			result.setRatioOfPropiedad1WithPropiedad2(0.0);
+		} else {
+			result.setRatioOfPropiedad1WithPropiedad2(this.repository.ratioOfPropiedad1WithPropiedad2());
+		}
 
 		result.setRatioOfPropiedad3Protected(this.repository.ratioOfPropiedad3Protected());
 
