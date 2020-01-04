@@ -57,7 +57,7 @@ public class EmployerApplicationAcceptService implements AbstractUpdateService<E
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "referenceNumber", "moment", "status", "skills", "qualifications", "job.title", "job.reference", "worker.userAccount.username", "justification");
+		request.unbind(entity, model, "referenceNumber", "moment", "status", "skills", "qualifications", "job.title", "job.reference", "worker.userAccount.username", "justification", "job.propiedad1");
 	}
 
 	@Override

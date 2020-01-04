@@ -62,8 +62,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications", "answer", "propiedad3", "password");
-
+		request.unbind(entity, model, "job.id", "referenceNumber", "statement", "skills", "qualifications", "answer", "propiedad3", "password", "job.propiedad1");
 	}
 
 	@Override
@@ -109,14 +108,14 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		errors.state(request, !isDuplicated, "referenceNumber", "worker.application.error.duplicated");
 
 		boolean passwordCorrect;
-		boolean hasPropiedad3 = !entity.getPropiedad3().isEmpty() && entity.getPropiedad3() != null;
+		boolean hasPropiedad3 = entity.getPropiedad3() != null && !entity.getPropiedad3().isEmpty();
 
 		if (hasPropiedad3) {
 			boolean hasAnswer = entity.getAnswer() != null && !entity.getAnswer().isEmpty();
 			errors.state(request, hasAnswer, "answer", "worker.application.error.answer");
 		}
 
-		if (!(entity.getPassword().isEmpty() || entity.getPassword() == null)) {
+		if (!(entity.getPassword() == null || entity.getPassword().isEmpty())) {
 			errors.state(request, hasPropiedad3, "propiedad3", "worker.application.error.propiedad3");
 
 			passwordCorrect = entity.getPassword().matches("^(?=(.*[A-Za-z]){3})(?=(.*[0-9]){3})(?=(.*[¡!\\\"\\\\#$%&'()*+,\\r\\n\\\\./:;<=>¿?@\\\\[\\r\\n\\\\]^_‘{|}~]){3}).+") && entity.getPassword().length() >= 8;
