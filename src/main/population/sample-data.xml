@@ -488,6 +488,7 @@
 		<property name="roles">
 			<list>
 				<ref bean="auditor1Auditor"/>
+				<ref bean="auditor1NotActiveAuditor"/>
 				<ref bean="auditor1Authenticated"/>
 			</list>
 		</property>
@@ -496,6 +497,14 @@
 	<bean name="auditor1Auditor" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Auditor 1 Inc."/>
 		<property name="responsibilityStatement" value="Me responsabilizo de todo"/>
+
+		<property name="userAccount" ref="auditor1UserAccount"/>
+	</bean>
+	
+	<bean name="auditor1NotActiveAuditor" class="acme.entities.roles.NotActiveAuditor">
+		<property name="firm" value="Auditor 1 Inc."/>
+		<property name="responsibilityStatement" value="Me responsabilizo de todo"/>
+		<property name="enabled" value="true"/>
 
 		<property name="userAccount" ref="auditor1UserAccount"/>
 	</bean>
@@ -518,6 +527,7 @@
 		<property name="roles">
 			<list>
 				<ref bean="auditor2Auditor"/>
+				<ref bean="auditor2NotActiveAuditor"/>
 				<ref bean="auditor2Authenticated"/>
 			</list>
 		</property>
@@ -526,6 +536,13 @@
 	<bean name="auditor2Auditor" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Auditor 2 Inc."/>
 		<property name="responsibilityStatement" value="Me comprometo a todo"/>
+		<property name="userAccount" ref="auditor2UserAccount"/>
+	</bean>
+	
+	<bean name="auditor2NotActiveAuditor" class="acme.entities.roles.NotActiveAuditor">
+		<property name="firm" value="Auditor 2 Inc."/>
+		<property name="responsibilityStatement" value="Me comprometo a todo"/>
+		<property name="enabled" value="true"/>
 		<property name="userAccount" ref="auditor2UserAccount"/>
 	</bean>
 	

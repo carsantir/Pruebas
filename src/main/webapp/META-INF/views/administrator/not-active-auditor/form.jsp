@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.auditor.form.label.firm" path="firm"/>
-	<acme:form-textbox code="administrator.auditor.form.label.responsibilityStatement" path="responsibilityStatement"/>
+	<acme:form-textbox code="administrator.auditor.form.label.firm" path="firm" readonly="true"/>
+	<acme:form-textbox code="administrator.auditor.form.label.responsibilityStatement" path="responsibilityStatement" readonly="true"/>
 	<acme:form-checkbox code="administrator.auditor.form.label.enabled" path="enabled"/>
   <acme:form-submit test="${command == 'show' }"
 		code="administrator.auditor.form.button.update"
