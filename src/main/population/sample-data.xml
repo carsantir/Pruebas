@@ -11,7 +11,7 @@
 	<import resource="conversion-service.xml" />
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample Announcement 01" />
-		<property name="moment" value="2019/02/14 10:14" />
+		<property name="moment" value="2019/12/31 10:14" />
 		<property name="moreInfo">
 			<null />
 		</property>
@@ -303,9 +303,7 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
-		<property name="propiedad1">
-			<null />
-		</property>
+		<property name="propiedad1" value="Text 1"/>
 		<property name="propiedad2">
 			<null />
 		</property>
@@ -318,7 +316,7 @@
 	<bean name="duty1job1" class="acme.entities.jobs.Duty">
 		<property name="title" value="Duty One From Job One"/>
 		<property name="description" value="Duty One from Job One"/>
-		<property name="percentage" value="10"/>
+		<property name="percentage" value="60"/>
 		<property name="job" ref="job1" />
 	</bean>
 	
@@ -366,12 +364,8 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
-		<property name="propiedad1">
-			<null />
-		</property>
-		<property name="propiedad2">
-			<null />
-		</property>
+		<property name="propiedad1" value="Text 2"/>
+		<property name="propiedad2" value="http://www.link2.com"/>
 		<property name="employer" ref="employer2Employer"/>
 	</bean>
 	
@@ -419,7 +413,7 @@
 	<bean name="duty2job3" class="acme.entities.jobs.Duty">
 		<property name="title" value="Duty Two Job Three"/>
 		<property name="description" value="Duty Two from Job Three"/>
-		<property name="percentage" value="80"/>
+		<property name="percentage" value="10"/>
 		<property name="job" ref="job3" />
 	</bean>
 	
@@ -431,12 +425,8 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
-		<property name="propiedad1">
-			<null />
-		</property>
-		<property name="propiedad2">
-			<null />
-		</property>
+		<property name="propiedad1" value="Text 4"/>
+		<property name="propiedad2" value="http://www.link4.com"/>
 		<property name="employer" ref="employer2Employer"/>
 	</bean>
 	
@@ -463,9 +453,7 @@
 		<property name="moreInfo" value="http://www.goikos.es"/>
 		<property name="draft" value="false"/>
 		<property name="description" value="this is a description" />
-		<property name="propiedad1">
-			<null />
-		</property>
+		<property name="propiedad1" value="Text 5"/>
 		<property name="propiedad2">
 			<null />
 		</property>
@@ -473,6 +461,19 @@
 
 	</bean>
 		
+	<bean name="duty1job5" class="acme.entities.jobs.Duty">
+		<property name="title" value="Duty One From Job Five"/>
+		<property name="description" value="Duty One from Job Five"/>
+		<property name="percentage" value="75"/>
+		<property name="job" ref="job5" />
+	</bean>
+	
+	<bean name="duty2job5" class="acme.entities.jobs.Duty">
+		<property name="title" value="Duty Two From Job Five"/>
+		<property name="description" value="Duty Two from Job Five"/>
+		<property name="percentage" value="25"/>
+		<property name="job" ref="job5" />
+	</bean>
 	
 	<bean id="auditor1UserAccount" class="acme.framework.entities.UserAccount">
 		<property name="username" value="auditor1" />
