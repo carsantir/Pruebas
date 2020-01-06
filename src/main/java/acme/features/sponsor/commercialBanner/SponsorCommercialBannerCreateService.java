@@ -12,7 +12,6 @@ import acme.entities.roles.Sponsor;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractCreateService;
 
 @Service
@@ -25,18 +24,7 @@ public class SponsorCommercialBannerCreateService implements AbstractCreateServi
 	@Override
 	public boolean authorise(final Request<CommercialBanner> request) {
 		assert request != null;
-
-		boolean res;
-		Principal principal;
-		principal = request.getPrincipal();
-		Sponsor s = this.repository.findCreditCardBySponsorId(principal.getActiveRoleId());
-		if (s.getCreditCard() != null && !s.getCreditCard().isEmpty() && s.getExpirationDate() != null && !s.getExpirationDate().isEmpty() && s.getCvv() != null) {
-			res = true;
-		} else {
-			res = false;
-		}
-
-		return res;
+		return true;
 	}
 
 	@Override
@@ -113,6 +101,12 @@ public class SponsorCommercialBannerCreateService implements AbstractCreateServi
 				errors.state(request, isFuture, "expirationDate", "sponsor.commercial-banner.error.expiration-date");
 			}
 		}
+
+		boolean hasCreditCard;
+		Sponsor s = this.repository.findSponsor(request.getPrincipal().getActiveRoleId());
+		hasCreditCard = s.getCreditCard() != null && !s.getCreditCard().isEmpty() && s.getExpirationDate() != null && !s.getExpirationDate().isEmpty() && s.getCvv() != null;
+		errors.state(request, hasCreditCard, "hasCreditCard", "sponsor.commercial-banner.error.hasCreditCard");
+
 	}
 
 	@Override

@@ -30,3 +30,4 @@ sponsor.commercial-banner.form.button.return = Volver
 sponsor.commercialbanner.error.spam=El texto supera el número de palabras spam permitidas
 sponsor.commercial-banner.error.expiration-date = La fecha de expiración con el formato mm/yyyy debe ser futura
 sponsor.commercial-banner.error.invalid-format = El formato de fecha debe ser mm/yyyy
+sponsor.commercial-banner.error.hasCreditCard = El patrocinador debe tener registrada una tarjeta de crédito en la información de su cuenta
