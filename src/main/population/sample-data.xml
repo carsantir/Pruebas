@@ -657,15 +657,13 @@
 	
 	<bean name="application2" class="acme.entities.jobs.Application">
 		<property name="referenceNumber" value="EMP2-JOB2:WOR1"/>
-		<property name="moment" value="2019/11/23 10:00"/>
+		<property name="moment" value="2009/11/23 10:00"/>
 		<property name="status" value="REJECTED"/>
 		<property name="justification" value="no concuerdas" />
 		<property name="statement" value="Statement 2"/>
 		<property name="skills" value="Skill 2"/>
 		<property name="qualifications" value="Qualification 2"/>
-		<property name="answer">
-			<null />
-		</property>
+		<property name="answer" value="answer2"/>
 		<property name="propiedad3">
 			<null />
 		</property>
@@ -684,7 +682,7 @@
 		<property name="statement" value="Statement 3"/>
 		<property name="skills" value="Skill 3"/>
 		<property name="qualifications" value="Qualification 3"/>
-		<property name="answer">
+			<property name="answer">
 			<null />
 		</property>
 		<property name="propiedad3">
@@ -850,22 +848,16 @@
 		<property name="statement" value="Statement 4"/>
 		<property name="skills" value="Skill 4"/>
 		<property name="qualifications" value="Qualification 4"/>
-		<property name="answer">
-			<null />
-		</property>
-		<property name="propiedad3">
-			<null />
-		</property>
-		<property name="passwordPropiedad3">
-			<null />
-		</property>
+		<property name="answer" value="answer4" />
+		<property name="propiedad3" value="https://www.twitter.com"/>
+		<property name="passwordPropiedad3" value="pass123???" />
 		<property name="worker" ref="worker2Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
 	
 	<bean name="application5" class="acme.entities.jobs.Application">
 		<property name="referenceNumber" value="EMP2-JOB2:WOR2"/>
-		<property name="moment" value="2019/11/30 10:00"/>
+		<property name="moment" value="2009/11/30 10:00"/>
 		<property name="status" value="REJECTED"/>
 		<property name="justification" value="no me gustas" />
 		<property name="statement" value="Statement 5"/>
@@ -892,9 +884,7 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
-		<property name="answer">
-			<null />
-		</property>
+		<property name="answer" value="answer6" />
 		<property name="propiedad3">
 			<null />
 		</property>
@@ -913,12 +903,8 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
-		<property name="answer">
-			<null />
-		</property>
-		<property name="propiedad3">
-			<null />
-		</property>
+		<property name="answer" value="answer 7" />
+		<property name="propiedad3" value="https://www.facebook.com"/>
 		<property name="passwordPropiedad3">
 			<null />
 		</property>
@@ -934,15 +920,9 @@
 		<property name="statement" value="Statement 1"/>
 		<property name="skills" value="Skill 1"/>
 		<property name="qualifications" value="Qualification 1"/>
-		<property name="answer">
-			<null />
-		</property>
-		<property name="propiedad3">
-			<null />
-		</property>
-		<property name="passwordPropiedad3">
-			<null />
-		</property>
+		<property name="answer" value="answer 8" />
+		<property name="propiedad3" value="https://www.tumblr.com"/>
+		<property name="passwordPropiedad3" value="ottra2334password???!!!!!" />
 		<property name="worker" ref="worker5Worker"/>
 		<property name="job" ref="job1"/>
 	</bean>
@@ -976,9 +956,7 @@
 		<property name="statement" value="Statement 2"/>
 		<property name="skills" value="Skill 2"/>
 		<property name="qualifications" value="Qualification 2"/>
-		<property name="answer">
-			<null />
-		</property>
+		<property name="answer" value="answer 10" />
 		<property name="propiedad3">
 			<null />
 		</property>
