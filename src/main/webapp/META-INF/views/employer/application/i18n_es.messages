@@ -30,6 +30,7 @@ employer.application.form.label.password=passwordPropiedad3
 
 employer.application.form.button.return = Volver
 employer.application.form.button.reject = Rechazar
+employer.application.form.button.accept = Aceptar
 
 employer.application.error.need-justification = Se necesita una justificación si se rechaza
 employer.application.error.must-be-pending = El estado tiene que ser pendiente para poder aceptarlo o rechazarlo
